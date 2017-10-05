@@ -1,4 +1,6 @@
-# programacion_lineal
+# Curso de Programación Lineal en R (2017)
+## Facultad de Economía UNAM
+
 Aquí encontrarás lel repositorio de la clase Programación Lineal. 
 Este repositorio contiene todo el código que se observará durante las sesiones en clase.
 
