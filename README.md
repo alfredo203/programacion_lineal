@@ -7,5 +7,7 @@ Este repositorio contiene todo el código que se observará durante las sesiones
 Es recomendable seguir el curso en orden; sin embargo si te sientes confiado en tu nivel de R,
 puedes optar por explorar secciones más avanzadas.
 
+Dudas al correo: alfredini31@hotmail.com
+
 
 ![alt text](https://media.giphy.com/media/UcK7JalnjCz0k/giphy.gif)
