@@ -22,7 +22,7 @@ View(df)
 names(df) <- 1:ncol(df) ## Funcion que cambia los nombres names(x) <- y
 
 ## Instalar la libreria de manipulación de información
-install.packages("dplyr")
+# install.packages("dplyr")
 
 ## Cargar la libreria de manipulación de información
 library(dplyr)
@@ -71,6 +71,19 @@ plot(x = pc_limpio$fecha,
      y = pc_limpio$IPC, 
      type = "l",
      col = "blue")
+
+## Haciendo la predicción del modelo (ARIMA)
+
+
+library(forecast)
+fit <-auto.arima(pc_limpio$IPC)
+summary(fit)
+
+# Acf(residuals(fit))
+plot(forecast(fit))
+
+## Advertencia: auto.arima NO es un modelo formal,
+## un econometra de verdad tiene que realizar y analizar el modelo
 
 
 
