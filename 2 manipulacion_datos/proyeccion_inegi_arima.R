@@ -73,14 +73,15 @@ plot(x = pc_limpio$fecha,
      col = "blue")
 
 ## Haciendo la predicción del modelo (ARIMA)
-
-
+install.packages("forecast")
 library(forecast)
-fit <-auto.arima(pc_limpio$IPC)
-summary(fit)
+modelo <-auto.arima(pc_limpio$IPC)
+summary(modelo)
 
 # Acf(residuals(fit))
 plot(forecast(fit))
+
+forecast(fit) ## Valores de la predicción
 
 ## Advertencia: auto.arima NO es un modelo formal,
 ## un econometra de verdad tiene que realizar y analizar el modelo
