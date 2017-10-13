@@ -1,5 +1,6 @@
 ## Clase 2. Manipulación de datos
 
+library(dplyr)
 
 ## Carga de información
 

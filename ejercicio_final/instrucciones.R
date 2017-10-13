@@ -13,3 +13,13 @@ library(nycflights13)
 data(flights)
 
 View(flights)
+
+names(flights)
+
+## Las variables importantes son:
+## time_hour = variable de tiempo
+## distance = distancia de viaje
+## tailnum = identificador del avión
+
+## Recuerda! todo está en swirl (lección 1 en el repositorio)
+## si tienes dificultades para resolver
