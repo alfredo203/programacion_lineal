@@ -6,7 +6,7 @@
 
 ## Instrucciones para cargar el archivo
 
-install.packages("nycflights13")
+install.packages("nycflights13") 
 
 library(nycflights13)
 
@@ -35,3 +35,39 @@ library(reshape2)
 
 ## 3. Tomar el ciclo for que hicimos en la clase de PIB y cambiar los rangos-nombres de las matrices
 ## o dataframes
+
+
+## Cambiar el formato a días,
+## no hace sentido ver una gráfica por hora
+flights$time_month <- format(flights$time_hour, format = "%Y-%m-%d")
+
+## Agrupamos la distancia por avión y por mes
+df <- flights %>% 
+  select(tailnum, distance, time_month) %>% 
+  group_by(tailnum, time_month) %>% 
+  summarise(total_distance = sum(distance))
+
+## Cambiamos el formato para obtener una bonita "matriz"
+library(reshape2)
+
+df_matriz <- dcast(df, time_month ~ tailnum, value.var = "total_distance")
+# df_matriz$time_month <- as.Date(df_matriz$time_month)
+df_matriz$time_month<-cut(df_matriz$time_month, breaks = "months")
+
+## Aplicamos el ciclo for para obtener unas gráficas bien locas
+rango <- ncol(df_matriz)
+
+nombres <-names(df_matriz)
+
+for(i in 2:50){ ## fijo a sólo 50 gráficas
+  a <-(df_matriz[ , i])
+  plot(df_matriz$time_month, a, main = nombres[i], "l")
+}
+
+## Quizás un poco de análisis? 
+## tiren su magia (/￣ー￣)/~~☆’.･.･:★’.･.･:☆
+## siempre hay hipótesis interesantes que resolver!
+
+## Qué avión voló más ditancia en el año?
+## cuál es la velocidad promedio de viaje?
+## Quiénes viajaban más rápido en el mes de septiembre? etc.
