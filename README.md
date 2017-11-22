@@ -11,3 +11,8 @@ Dudas al correo: alfredini31@hotmail.com
 
 
 ![alt text](https://media.giphy.com/media/UcK7JalnjCz0k/giphy.gif)
+
+
+## Recursos para aprender más sobre R / Data Science / programación
+
+1. https://www.coursera.org/specializations/jhu-data-science#courses
