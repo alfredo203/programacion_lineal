@@ -15,4 +15,15 @@ Dudas al correo: alfredini31@hotmail.com
 
 ## Recursos para aprender más sobre R / Data Science / programación
 
-1. https://www.coursera.org/specializations/jhu-data-science#courses
+1. [Especialización en Ciencia de Datos](https://www.coursera.org/specializations/jhu-data-science#courses)
+
+2. [The art of Data Science](https://leanpub.com/artofdatascience)
+
+3. [Introducción al Data Science para Economistas](https://drive.google.com/file/d/1_A_GcpNwa2pmgDqRDq3joGFTF2Zow8N7/view?usp=sharing)
+
+4. [R for Data Science](http://r4ds.had.co.nz/)
+
+
+## Recursos sobre Inteligencia artificial para economistas
+
+1. [Principios de Inteligencia Artificial para Economistas](https://github.com/alfredo203/economia_inteligencia_artificial)
